@@ -1,6 +1,7 @@
 #-----------------------------------------------------------------------------------#
 
 #Pattern analysis of HT-H295R data near the calculated BMD#
+#Generates figure 6#
 
 
 # source("https://bioconductor.org/biocLite.R")
@@ -259,7 +260,7 @@ decorate_heatmap_body("heat2", {
 }, slice = 4)
 dev.off()
 
-png("./figures/Figure5_aromataseHeatmap.png", width = 22, height = 12, res = 300, units = "in")
+png("./figures/Figure6_aromataseHeatmap.png", width = 22, height = 12, res = 300, units = "in")
 draw(ht_list2, row_dend_side = "left", heatmap_legend_side = "left", annotation_legend_side = "left", padding = padding)
 
 decorate_heatmap_body("log2 FC", slice = 1, {

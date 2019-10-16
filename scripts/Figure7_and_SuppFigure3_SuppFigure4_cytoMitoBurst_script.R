@@ -2,7 +2,7 @@
 
 #Selectivity scoring of the Mahalanobis distance through
 #incorporation of cyto and mito burst.
-#Genrate figure 6 and supplemental figures 3 and 4
+#Genrate figure 7 and supplemental figures 3 and 4
 
 
 #devtools::install_git("http://dhaggard@bitbucket.zn.epa.gov/scm/tox/tcpl.git", branch = 'scitovation-updates')
@@ -216,11 +216,11 @@ p1 <- ggplot(data = distance_dat[date_chnm_plate %in% selected_chems]) +
 
 p3 <- ggarrange(p, p1, common.legend = TRUE, widths = c(1, 0.2), align = "h", legend = "right")
 
-pdf("./figures/Figure6_selectivityPlot.pdf", width = 15, height = 12)
+pdf("./figures/Figure7_selectivityPlot.pdf", width = 15, height = 12)
 p3
 dev.off()
 
-png("./figures/Figure6_selectivityPlot.png", width = 15, height = 12, units = "in", res = 300)
+png("./figures/Figure7_selectivityPlot.png", width = 15, height = 12, units = "in", res = 300)
 p3
 dev.off()
 # 
